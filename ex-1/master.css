@@ -14,7 +14,11 @@ nav {
     padding: 10px;
     background-color: #000;
     height: 50px;
-    
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+
 }
 .icon {
     width: 30px;
@@ -104,6 +108,9 @@ main .card img{
 main .card p{
     padding-top: 20px;
 }
+.cord:first-child{
+    padding-top:60px ;
+}
 
 
 
@@ -142,13 +149,14 @@ main .card p{
         display: none;
         }
     .card{
-       
+        
         flex-direction: row;
         
     }
     main .card p{
         padding-right: 10px;
     }
+    
     }
     
 
