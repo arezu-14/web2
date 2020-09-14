@@ -1,0 +1,163 @@
+/* nav and header*/
+
+
+header{
+    height: 100vh;
+    @extend %mrg;
+    .img-right{
+        position: relative;
+        right: 0;
+        top: 0;
+        bottom: 0;
+       
+        .Horizontal{
+            padding: 10px;
+            justify-content: space-evenly;
+            z-index: 10;
+            position: absolute;
+            top: 0;
+            right: 10px;
+            
+            ul{
+                justify-content: space-evenly;
+                background-color: transparent;
+                list-style-type: none;
+                @extend %mrg;
+                li{
+                    padding: 5px;
+
+                    a{
+                        @include letter(0.9em,uppercase,none);
+                    }
+                }
+            }
+        }
+        img{
+            object-fit: cover;
+            height: 100vh;
+            width: 100%;    
+        }
+        .vertical{
+            height: 20%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+               
+            .down-right{
+                
+                list-style-type: none;
+                   
+                li{
+                    @include letter(0.8em,capitalize,none);
+                    
+                }
+                      
+            }
+              
+        }
+
+    }
+        
+    .part-left{
+        height: 100vh;
+        .part-left-up{
+              height: 77vh;
+              @media only screen and (min-width: width 1200px){
+                height: 77vh;
+              }
+              background-color: #F7F7F7;
+              div{
+                  a{
+                      text-decoration: none;
+                      color: $primary-color;
+                      margin: 20px 10px 10px 20px;
+                      padding: 5px;
+                      font-size: 1.5em;
+                      font-weight: bolder;
+                    }
+                }
+                .part-left-up-center{
+                    height: 45vh;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    @extend %space;
+                    
+                    h3{
+                        
+                        @include letter(1em,uppercase,none)
+                        
+                    }
+                    h1{
+                      
+                        @include letter(3em,uppercase,none)
+                        
+                    }
+                    .line{
+                        @extend %line;
+                        
+                    }
+                    
+                }
+
+        }
+        .part-left-down{
+            background-color: #ECECEE;
+            height: 23vh;
+            @media only screen and (min-width: width 1200px){
+                height: 20vh;
+              }
+            div{
+                height: 18vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin-left: 80px;
+                
+                .line{
+                    @extend %line;
+                    a{
+                        text-decoration: none;
+                        color: $primary-color;
+                    }
+                    
+                    
+                }
+                h3{
+                            
+                    @include letter(1em,uppercase,none);
+                    a{
+                        text-decoration: none;
+                        color: $primary-color;
+                    }
+                    
+                    
+                }
+                p{
+                    @include letter(0.8em,capitalize,none);
+                    
+                }
+                span a{
+                    @include letter(0.8em,capitalize,none);
+                    
+                    border-bottom: 1px solid $primary-color;
+                }
+
+            }
+            
+            
+
+        }   
+    }
+}
+
+
+    
+    
+    
+
+
+
+
+
+
+

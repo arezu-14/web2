@@ -1,0 +1,28 @@
+$primary-color:#484D47;
+@mixin letter($size, $text, $align){
+    text-transform: $text;
+    font-size: $size ;
+    color: $primary-color;
+    text-decoration: none;
+    text-align: $align;
+    
+}
+%line{
+    width: 20px;
+    border: 2px solid $primary-color;
+
+}
+%space{
+    margin-left: 70px;
+    margin-top: 70px;
+
+}
+%mrg{
+    margin: 10px;
+}
+@mixin ulli($justify){
+    list-style-type: none;
+    justify-content: $justify;
+    align-items: center;
+    height: 100%;
+}

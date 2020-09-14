@@ -1,0 +1,38 @@
+footer{
+
+    height: 150px;
+    border-top: 1px solid #dedede;
+    .left{
+        padding: 20px;
+        .left-ul{
+            @include ulli(start);
+            margin-left: 40px;
+            
+            li{ 
+                padding: 10px;
+                a{
+                    img{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                }
+                
+        }
+    }
+    .right{
+        padding: 20px;
+        .right-ul{
+            @include ulli(space-evenly);
+            
+            li{
+                padding: 10px;
+                
+                a{
+                    @include letter(0.9em, uppercase, center);
+                }
+            }
+        }
+    }
+
+}
