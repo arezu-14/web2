@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TelegramDesign</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./master.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-lg-4 col-xs-2 col-3 col-sm-2 border-righ pr-0 pl-3 border-right border-third ">
+
+           <nav >
+            <div class="navbar navbar-light ">
+              <div id="mySidenav" class="sidenav">
+                <header class="head1 mb-3">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="" ><img src="./img/photo_2019-03-16_04-27-01.jpg" alt="..." class="rounded-circle roundimg ml-2 mb-3 mt-4"></a>
+                  <a href=""><h5 class="ml-2">Arezu.j</h5><span class="ml-2 mb-3 ">+9896857498</span></a>
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                </header>
+                <main class="mb-5">
+                  <a href="#"><img class="icon mr-sm-4" src="./img/users.svg" alt="">New Group</a>
+                <a href="#"><img class="icon mr-sm-4" src="./img/megaphone.svg" alt="">New Channel</a>
+                <a href="#"><img class="icon mr-sm-4" src="./img/user.svg" alt="">Contacts</a>
+                <a href="#"><img class="icon mr-sm-4" src="./img/phone.svg" alt="">Calls</a>
+                <a href="#"><img class="icon mr-sm-4" src="./img/settings.svg" alt="">Settings</a>
+                <a href="#"><img class="icon mr-sm-4 " src="./img/moon.svg" alt=""> Night Mode</a>
+                </main>
+                
+                <footer class="mt-5 pt-4">
+                  <h6><a href="">Telegram Desktop</a></h6>
+                  <h6 ><span><a href="">Version 2.1.13</a></span></h6>
+                </footer>
+              </div>
+              <span style="font-size:30px;cursor:pointer ;padding-left: 20px;padding-bottom:5px" onclick="openNav()"><img src="./img/menu.svg" alt=""></span>
+              <form  >
+                <input  type="search" placeholder="Search" aria-label="Search">
+              </form>
+            </div>
+          </nav>
+          <div class="nav flex-column nav-pills "  id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            
+            <a class="disable1 nav-link active list"  id="v-pills-ati.j-tab" data-toggle="pill" href="#v-pills-atij" role="tab" aria-controls="v-pills-Ati.j" aria-selected="true"><img class="rounded-circle roundimg mr-3 mr-sm-2 " src="./img/IMG_4803.JPG" alt=""><label class="pt-3 px-2 ">Atieh</label><span class="part3 hidden"><span class="time ">10:45 PM</span><span class="badge badge-pill badge-primary mx-4 mb-2 ">1</span></span> </a>
+            <a class="nav-link list" id="v-pills-mona-tab" data-toggle="pill" href="#v-pills-mona" role="tab" aria-controls="v-pills-Mona" aria-selected="false"><img class="rounded-circle roundimg mr-3 mr-sm-2" src="./img/girl.jpg" alt=""><label class="pt-3 px-2">Mona</label> <span class="part3 hidden"><span class="time ">1:05 AM</span><span class="badge badge-pill badge-primary mx-4 mb-2 ">5</span></span> </a>
+            <a class="nav-link list" id="v-pills-mar.Ka-tab" data-toggle="pill" href="#v-pills-marka" role="tab" aria-controls="v-pills-Mar.Ka" aria-selected="false"> <img class="rounded-circle roundimg mr-3 mr-sm-2" src="./img/mar.jpg" alt=""><label class="pt-3 px-2">Maryam</label> </a>
+            <a class="nav-link list" id="v-pills-mahya-tab" data-toggle="pill" href="#v-pills-mahya" role="tab" aria-controls="v-pills-Mahya" aria-selected="false"> <img class="rounded-circle roundimg mr-3 mr-sm-2" src="./img/girl.jpg" alt="" ><label class="pt-3 px-2">Mahya</label> </a>
+            <a class="nav-link list" id="v-pills-lingemy-tab" data-toggle="pill" href="#v-pills-lingemy" role="tab" aria-controls="v-pills-lingemy" aria-selected="false"> <img class="rounded-circle roundimg mr-3 mr-sm-2" src="./img/photo_2019-11-06_17-20-37.jpg" alt=""><span class="pt-3 px-2 "><img class="icon mx-2 mx-lg-2" src="./img/megaphone 5.svg" alt=""><label for="">Lingemy</label></span> <span class="part3 hidden"><span class="time ">6:40 PM</span><span class="badge badge-pill badge-primary mx-4 mb-2 ">13</span></span> </a>
+            <a class="nav-link list" id="v-pills-rjafari-tab" data-toggle="pill" href="#v-pills-rjafari" role="tab" aria-controls="v-pills-rjafari" aria-selected="false"> <img class="rounded-circle roundimg mr-3 mr-sm-2" src="./img/photo_2019-12-22_00-38-24.jpg" alt=""><label class="pt-3 px-0">R.jafari</label> </a>
+            <a class="nav-link list" id="v-pills-fariba-tab" data-toggle="pill" href="#v-pills-fariba" role="tab" aria-controls="v-pills-fariba" aria-selected="false"><img class="rounded-circle roundimg mr-sm-2" src="./img/photo_2020-06-24_22-55-42.jpg" alt=""><label class="pt-3 px-2">Fariba</label> </a>
+            <a class="nav-link list" id="v-pills-ciw-tab" data-toggle="pill" href="#v-pills-ciw" role="tab" aria-controls="v-pills-ciw" aria-selected="false"> <img class="rounded-circle roundimg mr-sm-2" src="./img/ciw.jpg" alt=""> <span class="pt-3 px-0"><img class="icon mx-2 " src="./img/people-24px.svg" alt=""><label for=""> Ciw.Mft</label></span><span class="part3 hidden"><span class="time ">9:45 PM</span><span class="badge badge-pill badge-primary mx-4 mb-2 ">123</span></span> </a>
+          </div>
+          
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col-lg-8 col-sm-10 col-9 col-xm-10 bg-light px-0">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active border-bottom border-left border-third" id="v-pills-atij" role="tabpanel" aria-labelledby="v-pills-atij-tab">
+              <nav class="navbar2 navbar-light bg-white pr-0 ">
+                <a class="navbar-brand" href="#v-pills-atij" data-toggle="modal" data-target="#atij">
+                  Atieh
+                  <h6>last seen recently</h6>
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20" viewBox="0 0 16 16"  class="bi bi-search hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                  </svg>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-layout-sidebar-reverse hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                    <path fill-rule="evenodd" d="M11 14V2h1v12h-1z"/>
+                  </svg>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20"  viewBox="0 0 16 16" class="bi bi-three-dots-vertical hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"  d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                </a>
+              </nav>
+            </div>
+            <div class="tab-pane fade border-bottom border-left border-third " id="v-pills-mona" role="tabpanel" aria-labelledby="v-pills-mona-tab">
+              <nav class="navbar2 navbar-light bg-white">
+                <a class="navbar-brand" href="#v-pills-mona" data-toggle="modal" data-target="#mona">
+                  Mona
+                  <h6>last seen recently</h6>
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20" viewBox="0 0 16 16"  class="bi bi-search hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                  </svg>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-layout-sidebar-reverse hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                    <path fill-rule="evenodd" d="M11 14V2h1v12h-1z"/>
+                  </svg>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20"  viewBox="0 0 16 16" class="bi bi-three-dots-vertical hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"  d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                </a>
+              </nav>
+            </div>
+            <div class="tab-pane fade border-bottom border-left border-third" id="v-pills-marka" role="tabpanel" aria-labelledby="v-pills-marka-tab">
+              <nav class="navbar2 navbar-light bg-white">
+                <a class="navbar-brand" href="#v-pills-marka" data-toggle="modal" data-target="#marka">
+                  Maryam
+                  <h6>last seen recently</h6>
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20" viewBox="0 0 16 16"  class="bi bi-search hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                  </svg>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-layout-sidebar-reverse hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                    <path fill-rule="evenodd" d="M11 14V2h1v12h-1z"/>
+                  </svg>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20"  viewBox="0 0 16 16" class="bi bi-three-dots-vertical hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"  d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                </a>
+              </nav>
+            </div>
+            <div class="tab-pane fade border-bottom border-left border-right border-third" id="v-pills-mahya" role="tabpanel" aria-labelledby="v-pills-mahya-tab">
+              <nav class="navbar2 navbar-light bg-white">
+                <a class="navbar-brand" href="#v-pills-mahya" data-toggle="modal" data-target="#mahya">
+                  Mahya
+                  <h6>last seen recently</h6>
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20" viewBox="0 0 16 16"  class="bi bi-search hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                  </svg>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-layout-sidebar-reverse hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                    <path fill-rule="evenodd" d="M11 14V2h1v12h-1z"/>
+                  </svg>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20"  viewBox="0 0 16 16" class="bi bi-three-dots-vertical hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"  d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                </a>
+              </nav>
+            </div>
+            <div class="tab-pane fade show border-bottom border-left border-third " id="v-pills-lingemy" role="tabpanel" aria-labelledby="v-pills-lingemy-tab">
+              <nav class="navbar2 navbar-light bg-white">
+                <a class="navbar-brand" href="#v-pills-lingemy" data-toggle="modal" data-target="#lingemy">
+                  Lingemy
+                  <h6>26,143 Subscribers</h6>
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20" viewBox="0 0 16 16"  class="bi bi-search hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                  </svg>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-layout-sidebar-reverse hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                    <path fill-rule="evenodd" d="M11 14V2h1v12h-1z"/>
+                  </svg>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20"  viewBox="0 0 16 16" class="bi bi-three-dots-vertical hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"  d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                </a>
+              </nav>
+            </div>
+            <div class="tab-pane fade border-bottom border-left border-third " id="v-pills-rjafari" role="tabpanel" aria-labelledby="v-pills-rjafari-tab">
+              <nav class="navbar2 navbar-light bg-white">
+                <a class="navbar-brand" href="#v-pills-rjafari" data-toggle="modal" data-target="#rjafari">
+                  R.jafari
+                  <h6>last seen recently</h6>
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20" viewBox="0 0 16 16"  class="bi bi-search hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                  </svg>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-layout-sidebar-reverse hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                    <path fill-rule="evenodd" d="M11 14V2h1v12h-1z"/>
+                  </svg>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20"  viewBox="0 0 16 16" class="bi bi-three-dots-vertical hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"  d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                </a>
+              </nav>
+            </div>
+            <div class="tab-pane fade border-bottom border-left border-third " id="v-pills-fariba" role="tabpanel" aria-labelledby="v-pills-fariba-tab">
+              <nav class="navbar2 navbar-light bg-white">
+                <a class="navbar-brand" href="#v-pills-fariba" data-toggle="modal" data-target="#fariba">
+                  Fariba
+                  <h6>last seen recently</h6>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20" viewBox="0 0 16 16"  class="bi bi-search hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                  </svg>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-layout-sidebar-reverse hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                    <path fill-rule="evenodd" d="M11 14V2h1v12h-1z"/>
+                  </svg>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20"  viewBox="0 0 16 16" class="bi bi-three-dots-vertical hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"  d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                </a>
+              </nav>
+            </div>
+            <div class="tab-pane fade border-bottom border-left  border-third " id="v-pills-ciw" role="tabpanel" aria-labelledby="v-pills-ciw-tab">
+              <nav class="navbar2 navbar-light bg-white">
+                <a class="navbar-brand" href="#v-pills-ciw" data-toggle="modal" data-target="#ciw">
+                  Ciw.Mft
+                  <h6>8 Members</h6>
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20" viewBox="0 0 16 16"  class="bi bi-search hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                  </svg>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-layout-sidebar-reverse hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                    <path fill-rule="evenodd" d="M11 14V2h1v12h-1z"/>
+                  </svg>
+
+                </a>
+                <a href="" class="p-2">
+                  <svg width="20" height="20"  viewBox="0 0 16 16" class="bi bi-three-dots-vertical hidden" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"  d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                </a>
+              </nav>
+            </div>
+
+            
+          </div>
+          <footer >
+            <div class=" footerinput border-top border-left  border-third pr-3">
+              <a href="" class="p-2 hidden">
+                <span class="p-2"><svg width="24" height="24" viewBox="0 0 16 16" class="bi bi-paperclip" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+                </svg></span>
+              </a>
+            
+              <input type="text" placeholder="Write a message" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+              <a href="" class="p-2 hidden">
+                <span  ><svg width="24" height="24" viewBox="0 0 16 16" class="bi bi-emoji-smile" fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path fill-rule="evenodd" d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683z"/>
+                  <path d="M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                </svg></span>
+              </a>
+              <a href="" class="p-2 hidden">
+                <span class="py-2 hidden"><svg width="24" height="24" viewBox="0 0 16 16" class="bi bi-mic-fill " fill="#818181" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+                  <path fill-rule="evenodd" d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+                </svg></span>
+              </a>
+             
+            </input>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <!-- Modal-ati -->
+<div class="modal fade" id="atij" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">User Info</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <a href=""><img src="./img/phone2.svg" class="image" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#atij"><img src="./img/more.svg"  alt=""></a>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <nav class="navbar navbar-light bg-white border-bottom">
+        <a href="" data-toggle="modal" data-target="#atij2"><img class="rounded-circle roundimg mr-sm-2 " src="./img/IMG_4803.JPG"  alt=""></a>
+        <a class="navbar-brand2 " href="#v-pills-atij" >
+          
+          Ati.j 
+          <h6 >last seen recently</h6> 
+          
+        </a>
+      </nav>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal-ati2 -->
+<div class="modal fade" id="atij2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+
+      
+      <img class="realimg col-12" src="./img/IMG_4803.JPG" alt="">
+      
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+      <!-- Modal-mona -->
+<div class="modal fade" id="mona" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <a href=""><img src="./img/phone2.svg" class="image" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#mona"><img src="./img/more.svg"  alt=""></a>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <nav class="navbar navbar-light bg-white border-bottom">
+        <a href="" data-toggle="modal" data-target="#mona2"><img class="rounded-circle roundimg mr-sm-2 " src="./img/girl.jpg"  alt=""></a>
+        <a class="navbar-brand2 " href="#v-pills-mona" >
+          Mona
+          <h6>last seen recently</h6>
+        </a>
+      </nav>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal-mona2 -->
+<div class="modal fade" id="mona2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+
+      
+      <img class="realimg col-12" src="./img/girl.jpg" alt="">
+      
+    
+  </div>
+</div>
+      <!-- Modal-marka -->
+<div class="modal fade" id="marka" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">User Info</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <a href=""><img src="./img/phone2.svg" class="image" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#marka"><img src="./img/more.svg"  alt=""></a>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <nav class="navbar navbar-light bg-white border-bottom">
+        <a href="" data-toggle="modal" data-target="#marka2"><img class="rounded-circle roundimg mr-sm-2 " src="./img/mar.jpg"  alt=""></a>
+        <a class="navbar-brand2 " href="#v-pills-marka" >
+          Maryam
+          <h6>last seen recently</h6>
+        </a>
+      </nav>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal-marka2 -->
+<div class="modal fade" id="marka2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+
+      
+      <img class="realimg col-12" src="./img/mar.jpg" alt="">
+      
+    
+  </div>
+</div>
+      <!-- Modal-mahya -->
+<div class="modal fade" id="mahya" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">User Info</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <a href=""><img src="./img/phone2.svg" class="image" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#mahya"><img src="./img/more.svg"  alt=""></a>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <nav class="navbar navbar-light bg-white border-bottom">
+        <a href="" data-toggle="modal" data-target="#mahya2"><img class="rounded-circle roundimg mr-sm-2 " src="./img/girl.jpg"  alt=""></a>
+        <a class="navbar-brand2 " href="#v-pills-mahya" >
+          Mahya
+                  <h6>last seen recently</h6>
+       
+        </a>
+      </nav>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal-mahya2 -->
+<div class="modal fade" id="mahya2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+
+      
+      <img class="realimg col-12" src="./img/girl.jpg" alt="">
+      
+    
+  </div>
+</div>
+      <!-- Modal-lingemy -->
+<div class="modal fade" id="lingemy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <a href=""><img src="./img/phone2.svg" class="image" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#lingemy"><img src="./img/more.svg"  alt=""></a>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <nav class="navbar navbar-light bg-white border-bottom">
+        <a href="" data-toggle="modal" data-target="#lingemy2"><img class="rounded-circle roundimg mr-sm-2 " src="./img/photo_2019-11-06_17-20-37.jpg"  alt=""></a>
+        <a class="navbar-brand2 " href="#v-pills-lingemy" >
+          Lingemy
+          <h6>26,143 Subscribers</h6>
+        </a>
+      </nav>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal-lingemy2 -->
+<div class="modal fade" id="lingemy2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+
+      
+      <img class="realimg col-12" src="./img/photo_2019-11-06_17-20-37.jpg" alt="">
+      
+    
+  </div>
+</div>
+      <!-- Modal-rjafari -->
+<div class="modal fade" id="rjafari" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">User Info</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <a href=""><img src="./img/phone2.svg" class="image" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#rjafari"><img src="./img/more.svg"  alt=""></a>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <nav class="navbar navbar-light bg-white border-bottom">
+        <a href="" data-toggle="modal" data-target="#rjafari2"><img class="rounded-circle roundimg mr-sm-2 " src="./img/photo_2019-12-22_00-38-24.jpg"  alt=""></a>
+        <a class="navbar-brand2 " href="#v-pills-rjafari" >
+          R.jafari
+          <h6>last seen recently</h6>
+        </a>
+      </nav>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal-rjafari2 -->
+<div class="modal fade" id="rjafari2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+
+      
+      <img class="realimg col-12" src="./img/photo_2019-12-22_00-38-24.jpg" alt="">
+      
+    
+  </div>
+</div>
+      <!-- Modal-fariba-->
+<div class="modal fade" id="fariba" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">User Info</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <a href=""><img src="./img/phone2.svg" class="image" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#fariba"><img src="./img/more.svg"  alt=""></a>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <nav class="navbar navbar-light bg-white border-bottom">
+        <a href="" data-toggle="modal" data-target="#fariba2"><img class="rounded-circle roundimg mr-sm-2 " src="./img/photo_2020-06-24_22-55-42.jpg"  alt=""></a>
+        <a class="navbar-brand2 " href="#v-pills-fariba" >
+          Fariba
+          <h6>last seen recently</h6>
+          
+        </a>
+      </nav>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal-fariba2 -->
+<div class="modal fade" id="fariba2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+
+      
+      <img class="realimg col-12" src="./img/photo_2020-06-24_22-55-42.jpg" alt="">
+      
+    
+  </div>
+</div>
+      <!-- Modal-ciw -->
+<div class="modal fade" id="ciw" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">User Info</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <a href=""><img src="./img/phone2.svg" class="image" alt=""></a>
+          <a href="" data-toggle="modal" data-target="#ciw"><img src="./img/more.svg"  alt=""></a>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <nav class="navbar navbar-light bg-white border-bottom">
+        <a href="" data-toggle="modal" data-target="#ciw2"><img class="rounded-circle roundimg mr-sm-2 " src="./img/ciw.jpg"  alt=""></a>
+        <a class="navbar-brand2 " href="#v-pills-ciw" >
+          Ciw.Mft
+          <h6>8 Members</h6> 
+        </a>
+      </nav>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal-ciw2 -->
+<div class="modal fade" id="ciw2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+
+      
+      <img class="realimg col-12" src="./img/ciw.jpg" alt="">
+      
+    
+  </div>
+</div>
+    
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+</body>
+</html>
