@@ -133,7 +133,7 @@ header{
         }
         .part-left-up-center{
             position: absolute;
-            top: 160px;
+            top: 130px;
             left: 40px;
             display: block;
             @media only screen and (max-width:768px){
@@ -142,7 +142,8 @@ header{
             }
             h3{
                 @extend %line;
-                padding-top: 7px;
+                padding-top: 10px;
+                margin: 10px 0;
                 
                 a{
                     @include letter(1em,uppercase,none);
@@ -153,8 +154,8 @@ header{
             }
             h1{
                 @extend %line;
-               
-                padding-top: 7px;
+                margin: 10px 0;
+                padding-top: 10px;
                 
                 a{
                     @include letter(3em,uppercase,none);
@@ -168,13 +169,18 @@ header{
             position: absolute;
             bottom: 40px;
             left: 40px;
+            line-height: 1.5;
             
             h3{
                         
                 @include letter(1em,uppercase,none);
+                border-bottom: 2px solid $primary-color;
+                width: 20px;
+                
                 a{
                     text-decoration: none;
                     color: $primary-color;
+                    
                 }
                 
                 
