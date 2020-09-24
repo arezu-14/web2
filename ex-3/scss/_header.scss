@@ -5,31 +5,110 @@ header{
     height: 100vh;
     @extend %mrg;
     .img-right{
+       
         position: relative;
         right: 0;
         top: 0;
         bottom: 0;
+        .leftup-on-img{
+            width: 300px;
+            height: 300px;
+            z-index: 20;
+            display: none;
+            @media only screen and (man-width:768px){
+                display: block; 
+                z-index: 10;   
+            }
+        
+
+        }
+        
        
         .Horizontal{
             padding: 10px;
             justify-content: space-evenly;
-            z-index: 10;
+
             position: absolute;
             top: 0;
             right: 10px;
+            .menu-icon{
+                @extend %icon;
+                
+                display: none;
+                @media only screen and (max-width:768px){
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 11;
+                    
+                    
+
+            
+                }
+            }
+            
+            .close-icon {
+                @extend %icon;
+                background-color: #F7F7F7;
+                display: none;
+                
+                @media only screen and (max-width:768px){
+                  
+                    
+                    span{
+                        &:first-child{
+                            transform: rotate(45deg)translate(5px,5px);
+                            -webkit-transform: rotate(45deg)translate(5px,5px);
+                            -moz-transform: rotate(45deg)translate(5px,5px);
+                            -ms-transform: rotate(45deg)translate(5px,5px);
+                            -o-transform: rotate(45deg)translate(5px,5px);
+                        }
+                        &:last-of-type{
+                            transform: rotate(-45deg);
+                            -webkit-transform: rotate(-45deg);
+                            -moz-transform: rotate(-45deg);
+                            -ms-transform: rotate(-45deg);
+                            -o-transform: rotate(-45deg);
+                        }
+
+                    }
+                }
+            }
+            
             
             ul{
                 justify-content: space-evenly;
-                background-color: transparent;
+                
                 list-style-type: none;
                 @extend %mrg;
                 li{
                     padding: 5px;
 
                     a{
-                        @include letter(0.9em,uppercase,none);
+                        @include letter(1em,uppercase,none);
                     }
                 }
+                @media only screen and (max-width:768px){
+                    position: fixed;
+                    right: -100%;
+                    top: 0;
+                    bottom: 0;
+                    height: 100vh;
+                    width: 40%;
+                    background-color: #F7F7F7;
+                    flex-direction: column;
+                    align-items: center;
+                    &:target ~.close-icon{
+                        z-index: 12;
+                        display: block;
+                    }
+                    &:target{
+                        right: 0;
+                        z-index: 10;
+                    }
+                }
+                
             }
         }
         img{
@@ -37,18 +116,102 @@ header{
             height: 100vh;
             width: 100%;    
         }
+        .left-up{
+            
+            position: absolute;
+            top: 17px;
+            left: 40px;
+            
+            a{
+                font-weight: bolder;
+                @include letter(1.3em,capitalize,none);
+               
+            }
+           
+            
+
+        }
+        .part-left-up-center{
+            position: absolute;
+            top: 160px;
+            left: 40px;
+            display: block;
+            @media only screen and (max-width:768px){
+                display: none;
+
+            }
+            h3{
+                @extend %line;
+                padding-top: 7px;
+                
+                a{
+                    @include letter(1em,uppercase,none);
+                    padding: 5px;
+
+                }
+    
+            }
+            h1{
+                @extend %line;
+               
+                padding-top: 7px;
+                
+                a{
+                    @include letter(3em,uppercase,none);
+                    padding: 5px;
+
+                }
+                
+            }
+        }
+        .part-left-down{
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            
+            h3{
+                        
+                @include letter(1em,uppercase,none);
+                a{
+                    text-decoration: none;
+                    color: $primary-color;
+                }
+                
+                
+            }
+            p{
+               
+                
+                @include letter(0.9em,capitalize,none);
+                line-height: 2;
+                
+            }
+            span a{
+                @include letter(0.9em,capitalize,none);
+                
+                border-bottom: 1px solid $primary-color;
+            }
+
+        }
         .vertical{
             height: 20%;
             position: absolute;
             bottom: 0;
             right: 0;
+            margin-right: 25px;
                
             .down-right{
                 
                 list-style-type: none;
+                @media only screen and (max-width:480px){
+                    display: none;
+    
+                }
+               
                    
                 li{
-                    @include letter(0.8em,capitalize,none);
+                    margin: 5px;
+                    @include letter(0.9em,capitalize,none);
                     
                 }
                       
@@ -58,96 +221,7 @@ header{
 
     }
         
-    .part-left{
-        height: 100vh;
-        .part-left-up{
-              height: 77vh;
-              @media only screen and (min-width: width 1200px){
-                height: 77vh;
-              }
-              background-color: #F7F7F7;
-              div{
-                  a{
-                      text-decoration: none;
-                      color: $primary-color;
-                      margin: 20px 10px 10px 20px;
-                      padding: 5px;
-                      font-size: 1.5em;
-                      font-weight: bolder;
-                    }
-                }
-                .part-left-up-center{
-                    height: 45vh;
-                    flex-direction: column;
-                    justify-content: space-evenly;
-                    @extend %space;
-                    
-                    h3{
-                        
-                        @include letter(1em,uppercase,none)
-                        
-                    }
-                    h1{
-                      
-                        @include letter(3em,uppercase,none)
-                        
-                    }
-                    .line{
-                        @extend %line;
-                        
-                    }
-                    
-                }
-
-        }
-        .part-left-down{
-            background-color: #ECECEE;
-            height: 23vh;
-            @media only screen and (min-width: width 1200px){
-                height: 20vh;
-              }
-            div{
-                height: 18vh;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                margin-left: 80px;
-                
-                .line{
-                    @extend %line;
-                    a{
-                        text-decoration: none;
-                        color: $primary-color;
-                    }
-                    
-                    
-                }
-                h3{
-                            
-                    @include letter(1em,uppercase,none);
-                    a{
-                        text-decoration: none;
-                        color: $primary-color;
-                    }
-                    
-                    
-                }
-                p{
-                    @include letter(0.8em,capitalize,none);
-                    
-                }
-                span a{
-                    @include letter(0.8em,capitalize,none);
-                    
-                    border-bottom: 1px solid $primary-color;
-                }
-
-            }
-            
-            
-
-        }   
-    }
+    
 }
 
 

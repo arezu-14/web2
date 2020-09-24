@@ -1,4 +1,13 @@
 footer{
+    @media only screen and (max-width:768px){
+        flex-direction: column;
+        .left{
+            order: 1;
+        }
+        .left{
+            order: 2;
+        }
+        }
 
     height: 150px;
     border-top: 1px solid #dedede;
@@ -7,6 +16,11 @@ footer{
         .left-ul{
             @include ulli(start);
             margin-left: 40px;
+            @media only screen and (max-width:768px){
+                margin-left: 0px;
+                justify-content: center;
+                align-items: center;
+                }
             
             li{ 
                 padding: 10px;
@@ -24,6 +38,11 @@ footer{
         padding: 20px;
         .right-ul{
             @include ulli(space-evenly);
+            @media only screen and (max-width:768px){
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                }
             
             li{
                 padding: 10px;
